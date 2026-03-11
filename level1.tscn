@@ -1,0 +1,135 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://asetse/pixil-frame-0 (8).png" type="Texture" id=1]
+[ext_resource path="res://player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://window.tscn" type="PackedScene" id=3]
+[ext_resource path="res://level1.gd" type="Script" id=4]
+[ext_resource path="res://flowr.tscn" type="PackedScene" id=5]
+
+[node name="level1" type="Node2D"]
+script = ExtResource( 4 )
+
+[node name="Pixil-frame-0(8)" type="Sprite" parent="."]
+position = Vector2( -27, -22 )
+scale = Vector2( 8.02013, 8.14003 )
+texture = ExtResource( 1 )
+
+[node name="barrier" type="Node" parent="."]
+
+[node name="StaticBody2D" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 84, -21 )
+
+[node name="StaticBody2D2" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 85, 56 )
+
+[node name="StaticBody2D3" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 83, 134 )
+
+[node name="StaticBody2D4" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -126, 135 )
+
+[node name="StaticBody2D5" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -128, 58 )
+
+[node name="StaticBody2D6" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -128, -3 )
+
+[node name="StaticBody2D7" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -33, 105 )
+
+[node name="StaticBody2D8" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -32, 31 )
+
+[node name="StaticBody2D9" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -32, 188 )
+
+[node name="StaticBody2D10" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 28, 188 )
+
+[node name="StaticBody2D11" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 74, 188 )
+
+[node name="StaticBody2D12" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 99, 188 )
+
+[node name="StaticBody2D13" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -97, 188 )
+
+[node name="StaticBody2D14" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -159, 188 )
+
+[node name="StaticBody2D15" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -179, 234 )
+rotation = -1.5722
+
+[node name="StaticBody2D16" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -179, 187 )
+rotation = -1.5722
+
+[node name="StaticBody2D17" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -179, 152 )
+rotation = -1.5722
+
+[node name="StaticBody2D18" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -179, 124 )
+rotation = -1.5722
+
+[node name="StaticBody2D19" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -179, 84 )
+rotation = -1.5722
+
+[node name="StaticBody2D20" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -180, 31 )
+rotation = -1.5722
+
+[node name="StaticBody2D21" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( -180, -7.00001 )
+rotation = -1.5722
+
+[node name="StaticBody2D22" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 143, 19 )
+rotation = -1.5722
+
+[node name="StaticBody2D23" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 143, 78 )
+rotation = -1.5722
+
+[node name="StaticBody2D24" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 143, 139 )
+rotation = -1.5722
+
+[node name="StaticBody2D25" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 142, 198 )
+rotation = -1.5722
+
+[node name="StaticBody2D26" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 140, 228 )
+rotation = -1.5722
+
+[node name="StaticBody2D27" parent="barrier" instance=ExtResource( 5 )]
+position = Vector2( 141, -19 )
+rotation = -1.5722
+
+[node name="windows" type="Node" parent="."]
+
+[node name="window" parent="windows" instance=ExtResource( 3 )]
+position = Vector2( 130, -24 )
+
+[node name="window2" parent="windows" instance=ExtResource( 3 )]
+position = Vector2( -87, -18 )
+
+[node name="window3" parent="windows" instance=ExtResource( 3 )]
+position = Vector2( 129, 52 )
+
+[node name="window4" parent="windows" instance=ExtResource( 3 )]
+position = Vector2( -88, 52 )
+
+[node name="window5" parent="windows" instance=ExtResource( 3 )]
+position = Vector2( -87, 124 )
+
+[node name="window6" parent="windows" instance=ExtResource( 3 )]
+position = Vector2( 130, 124 )
+
+[node name="KinematicBody2D" parent="." instance=ExtResource( 2 )]
+light_mask = 3
+position = Vector2( 12, 204 )
