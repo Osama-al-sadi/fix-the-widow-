@@ -1,9 +1,9 @@
-extends Area2D # لا تخاف تقريبا عامل كل حاجة
+extends Area2D 
 
 var fixed = false
 var player_near = false
 var ok = false
-var fixed_widow = 0 # كل ما يصلح شباك = نقطة
+var fixed_widow = 0 
 func _process(delta):
 	if player_near and Input.is_action_just_pressed("fix"):#input "fix" = f(زر)الحرف 
 		fix_window()
