@@ -3,14 +3,14 @@ extends Area2D # لا تخاف تقريبا عامل كل حاجة
 var fixed = false
 var player_near = false
 var ok = false
-var fixed widow = 0 # كل ما يصلح شباك = نقطة
+var fixed_widow = 0 # كل ما يصلح شباك = نقطة
 func _process(delta):
 	if player_near and Input.is_action_just_pressed("fix"):#input "fix" = f(زر)الحرف 
 		fix_window()
 	if Input.is_action_pressed("reset"):#input "reset =  r (زر)الحرف
 		get_tree().reload_current_scene()
 		pass
-		if fixed widow == 6:
+		if fixed_widow == 6:
 			ok = true
 			pass
 		if ok == true:
