@@ -1,0 +1,29 @@
+# Godot Engine ignores
+
+# Built directories
+/.import/
+/bin/
+/build/
+
+# Metadata
+*.import
+*.gd
+*.gdns
+*.tscn
+*.scn
+
+# User-specific files
+*.user
+*.sublime-workspace
+
+# Godot specific
+.export/
+.editorconfig
+*.tscn~
+*.scn~
+*.gd~
+*.tmp
+
+# Operating System files
+.DS_Store
+Thumbs.db
